@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -17,6 +21,11 @@ div {
   color: white;
   font-family: Lato;
   font-weight: 550;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .hero {
@@ -51,47 +60,40 @@ header {
   height: 100vh;
 }
 
-#mainBtnDiv {
+/* #mainBtnDiv {
   display: flex;
   align-items: center;
   position: relative;
   width: 400px;
-  margin: 0 auto;
-  margin-block: 220px;
-  height: 130px;
+  margin: 220px auto 0; /* Justerer avstanden over elementet */
+/* height: 130px;
   background: #060c21;
   border-radius: 6px;
-}
+} */
 
-#mainBtnDiv:before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: #fff;
-  z-index: -1;
-}
-
-#mainBtnDiv:before {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: #fff;
-  z-index: -2;
-  filter: blur(40px);
-}
-
-#mainBtnDiv:before,
+/* #mainBtnDiv:before,
 #mainBtnDiv:after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+} */
+
+/* #mainBtnDiv:before,
+#mainBtnDiv::after {
   background: linear-gradient(235deg, #00aeff, #000000, #007bff);
 }
 
-#mainBtn {
+#mainBtnDiv:after {
+  background: #fff;
+  z-index: -2;
+  filter: blur(140px);
+} */
+
+/* #mainBtn {
   font-size: 50px;
   padding: 30px;
   background-color: transparent;
@@ -99,7 +101,7 @@ header {
   color: lightgray;
   width: inherit;
   font-weight: 300;
-}
+} */
 
 /* #mainBtDiv.active {
   font-size: 50px;
