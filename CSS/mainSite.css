@@ -1,13 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
 
-body{background-image: url();}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+div {
+  color: white;
+  font-family: Lato;
+  font-weight: 550;
+}
+
+body {
+  background-image: url(/Users/frederikaasland/Library/CloudStorage/OneDrive-Vikenfylkeskommune/IT1/Programmering/IT1/JS/Tredje-Innlevering/Bilder/spaceBackground.png);
+  background-size: cover;
+}
 
 header {
   display: flex;
   height: 10vh;
   background-color: transparent;
+  gap: 80px;
+}
+
+#headerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1020px 5fr 5fr;
+  grid-template-rows: 50px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+#mainBtnDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainBtn {
+  font-size: 50px;
+  padding: 30px;
+  border-radius: 6px;
+  background-color: darkcyan;
+  box-shadow: 0, 0, 2px lightgray;
+}
+
+#div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  grid-column: 1/2;
+  font-weight: 300;
+}
+#div2 {
+  grid-column: 3/4;
+  font-weight: 300;
+}
+#div3 {
+  grid-column: 4/5;
+  font-weight: 300;
 }
