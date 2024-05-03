@@ -19,8 +19,15 @@ div {
   font-weight: 550;
 }
 
-body {
+.hero {
   background-image: url(/Users/frederikaasland/Library/CloudStorage/OneDrive-Vikenfylkeskommune/IT1/Programmering/IT1/JS/Tredje-Innlevering/Bilder/spaceBackground.png);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+body {
   background-size: cover;
 }
 
@@ -40,21 +47,69 @@ header {
   justify-items: center;
 }
 
+#firstSection {
+  height: 100vh;
+}
+
 #mainBtnDiv {
   display: flex;
-  justify-content: center;
   align-items: center;
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  margin-block: 220px;
+  height: 130px;
+  background: #060c21;
+  border-radius: 6px;
+}
+
+#mainBtnDiv:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -1;
+}
+
+#mainBtnDiv:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: #fff;
+  z-index: -2;
+  filter: blur(40px);
+}
+
+#mainBtnDiv:before,
+#mainBtnDiv:after {
+  background: linear-gradient(235deg, #00aeff, #000000, #007bff);
 }
 
 #mainBtn {
   font-size: 50px;
   padding: 30px;
-  border-radius: 6px;
-  background-color: white;
-  box-shadow: 0px 3px 10px lightgray;
-  border: lightgray;
+  background-color: transparent;
+  border: transparent;
   color: lightgray;
+  width: inherit;
+  font-weight: 300;
 }
+
+/* #mainBtDiv.active {
+  font-size: 50px;
+  padding: 30px;
+  background-color: transparent;
+  border: transparent;
+  color: lightgray;
+  width: inherit;
+  font-weight: 300;
+} */
 
 #div1 {
   display: flex;
@@ -71,4 +126,9 @@ header {
 #div3 {
   grid-column: 4/5;
   font-weight: 300;
+}
+
+#mainSection {
+  height: 70vh;
+  background-color: lightgray;
 }
