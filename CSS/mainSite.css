@@ -1,0 +1,13 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body{background-image: url();}
+
+header {
+  display: flex;
+  height: 10vh;
+  background-color: transparent;
+}
