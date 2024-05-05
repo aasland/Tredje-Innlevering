@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
+  background-color: #98cedb;
 }
 
 h1,
@@ -70,7 +70,7 @@ div {
 .container .contactInfo .box .icon {
   min-width: 60px;
   height: 60px;
-  background-color: #c7c6c43b;
+  background-color: #8ac7d6;
   color: black;
   display: flex;
   justify-content: center;
@@ -96,7 +96,7 @@ div {
 .contactForm {
   width: 40%;
   padding: 40px;
-  background: #c7c6c43b;
+  background: #8ac7d6;
 }
 
 .contactForm h2 {
@@ -145,40 +145,19 @@ div {
 
 #contactBtn {
   width: 100px;
-  font-weight: 700;
-  background-color: transparent;
-  color: black;
-  border: 2px solid black;
+  font-weight: 300;
+  background-color: #060c21;
+  border: 2px solid lightblue;
   border-radius: 6px;
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
-
   display: flex;
   align-items: center;
+  filter: blur(-29px);
   position: relative;
 }
 
-#contactBtn:before,
-#contactBtn:after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  z-index: -1;
-}
-
-#contactBtn:before {
-  background: #fff;
-  filter: blur(40px);
-}
-
-#contactBtn:after {
-  background: linear-gradient(235deg, #00aeff, #000000, #007bff);
-}
-
 #contactBtn:hover {
-  background-color: #c7c6c43b;
+  background-color: #212944;
 }
