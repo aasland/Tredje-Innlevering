@@ -1,0 +1,10 @@
+html {
+  overflow: hidden;
+  height: 100%;
+  background: #191919;
+  width: 100%;
+}
+
+#canvas {
+  background: url("../Bilder/spaceBackground.png");
+}
