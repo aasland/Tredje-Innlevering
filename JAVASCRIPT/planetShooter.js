@@ -397,7 +397,7 @@ function game() {
       ctx.font = "20px Verdana";
       ctx.fillStyle = "white";
       ctx.textAlign = "center";
-      ctx.fillText("Antall ødelagt: " + destroyed, cW / 2, cH / 2 + 140);
+      ctx.fillText("Antall Ødelagt: " + destroyed, cW / 2, cH / 2 + 140);
 
       record = destroyed > record ? destroyed : record;
 
@@ -406,10 +406,6 @@ function game() {
       ctx.textAlign = "center";
       ctx.fillText("REKORD: " + record, cW / 2, cH / 2 + 185);
 
-      ctx.font = "20px Verdana";
-      ctx.fillStyle = "white";
-      ctx.textAlign = "center";
-      ctx.fillText("Hjem: ");
       ctx.drawImage(sprite, 500, 18, 70, 70, cW / 2 - 35, cH / 2 + 40, 70, 70);
 
       canvas.removeAttribute("class");
