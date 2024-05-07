@@ -406,9 +406,33 @@ function game() {
       ctx.textAlign = "center";
       ctx.fillText("REKORD: " + record, cW / 2, cH / 2 + 185);
 
+      // Tegn "Hjem" knappen
+      ctx.fillStyle = "blue";
+      ctx.fillRect(cW / 2 - 50, cH / 2 + 250, 100, 40);
+
+      
+      ctx.font = "20px Verdana";
+      ctx.fillStyle = "white";
+      ctx.textAlign = "center";
+      ctx.fillText("Hjem", cW / 2, cH / 2 + 277);
+
       ctx.drawImage(sprite, 500, 18, 70, 70, cW / 2 - 35, cH / 2 + 40, 70, 70);
 
       canvas.removeAttribute("class");
+
+      canvas.addEventListener("click", function (event) {
+        var mouseX = event.clientX - canvas.getBoundingClientRect().left;
+        var mouseY = event.clientY - canvas.getBoundingClientRect().top;
+
+        if (
+          mouseX >= cW / 2 - 50 &&
+          mouseX <= cW / 2 + 50 &&
+          mouseY >= cH / 2 + 250 &&
+          mouseY <= cH / 2 + 290
+        ) {
+          window.location.href = "index.html";
+        }
+      });
     }
   }
 

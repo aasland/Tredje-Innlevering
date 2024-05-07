@@ -141,6 +141,7 @@ header {
   align-items: center;
   width: 80px;
   grid-column: 1/2;
+  margin-left: 10px;
 }
 #div2 {
   grid-column: 3/4;
