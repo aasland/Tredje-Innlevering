@@ -12,6 +12,7 @@ html {
   background-size: cover;
 }
 
-#canvas.playing{
-    cursor: url;
+#canvas.playing {
+  cursor: url("../Bilder/cursor.png");
+  
 }
