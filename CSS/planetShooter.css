@@ -13,6 +13,5 @@ html {
 }
 
 #canvas.playing {
-  cursor: url("../Bilder/cursor.png");
-  
+  cursor: url("../Bilder/cursor.png") 17.5 17.5, auto !important;
 }
