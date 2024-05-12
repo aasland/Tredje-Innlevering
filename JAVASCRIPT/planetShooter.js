@@ -406,7 +406,6 @@ function game() {
       ctx.textAlign = "center";
       ctx.fillText("REKORD: " + record, cW / 2, cH / 2 + 185);
 
-      // Tegn "Hjem" knappen
       ctx.fillStyle = "blue";
       ctx.fillRect(cW / 2 - 50, cH / 2 + 250, 100, 40);
 
