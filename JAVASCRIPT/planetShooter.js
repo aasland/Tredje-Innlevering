@@ -406,11 +406,6 @@ function game() {
       ctx.textAlign = "center";
       ctx.fillText("REKORD: " + record, cW / 2, cH / 2 + 185);
 
-      // const currentHS = localStorage.getItem("HS") || 0;
-      // if (record > currentHS) {
-      //   localStorage.setItem("HS", record);
-      // }
-
       ctx.fillStyle = "blue";
       ctx.fillRect(cW / 2 - 50, cH / 2 + 250, 100, 40);
 
